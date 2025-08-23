@@ -1,0 +1,110 @@
+body {
+    background-image: url('bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    height: 600px;
+    width: 700px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.242);
+    box-shadow: 0 8px 32px 0 rgba(34, 44, 182, 0.514);
+    border-radius: 10px;
+}
+.container h2{
+    font-family: 'Oswald';
+    color: #083347;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+}
+.title {
+    font-size: 65px;
+    font-family: 'Oswald';
+    color: #083347;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px,auto;
+    height: 300px;
+    width: 600px;
+    margin-top: 5px;
+    margin-left: 50px;
+    /*background-color: rgba(69, 98, 143, 0.988);*/
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 50px;
+}
+
+#start, #pause, #reset {
+    font-family: 'Nunito';
+    height: 50px;
+    width: 100px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    font-size: 32px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2), 0 100px 100px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    gap: 30px;
+}
+
+
+
+#start:active, #pause:active, #reset:active {
+    background-color: aquamarine;
+    transform: scale(0.9);
+}
+
+#start:hover {
+    background-color: lightgreen;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+#pause:hover {
+    background-color: rgb(236, 81, 81);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+#reset:hover {
+    background-color: rgb(148, 149, 148);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.timer {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 180px;
+    font-family: 'Orbitron';
+    color:#046e7c;
+    text-shadow: 2px 2px 4px #000000;
+}
