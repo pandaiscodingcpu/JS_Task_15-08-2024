@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherDashboard</title>
+    <link rel="icon" type="image/png" href="facicon.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <div class="head">
+        <h1 class="title">Weather Dashboard</h1>
+        <div class="search-box">
+            <input type="text" class="city-input" id="city" placeholder="Enter city name...">
+            <button class="search-button" id="search-button">Search</button>
+        </div>
+    </div>
+    <div class="weather-card">
+        <div class="weather-left">
+            <div class="weather-icon"><img id="icon"></div>
+            <div class="temperature" id="temp"><h3>--°C</h3></div>
+        </div>
+        <div class="weather-right" id="weather-details">
+            <p>Humidity: --%</p>
+            <p>Wind Speed: -- km/h</p>
+        </div>
+    </div>
+
+    <div class="graph-section">
+        <div class="graph-card">
+            <h3>Temperature throughout the day</h3>
+            <canvas id="tempChart"></canvas>
+        </div>
+        <div class="graph-card">
+            <h3>Humidity and wind trends</h3>
+            <canvas id="humidityWindChart"></canvas>
+        </div>
+    </div>
+
+    <div class="subcards-container">
+        <div class="subcards">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast">
+                <span>Tomorrow</span>
+                <span class="icon">ICON</span>
+                <span>--°C</span>
+            </div>
+            <div class="forecast">
+                <span>Tomorrow</span>
+                <span class="icon">ICON</span>
+                <span>--°C</span>
+            </div>
+            <div class="forecast">
+                <span>Tomorrow</span>
+                <span class="icon">ICON</span>
+                <span>--°C</span>
+            </div>
+            <div class="forecast">
+                <span>Tomorrow</span>
+                <span class="icon">ICON</span>
+                <span>--°C</span>
+            </div>
+            <div class="forecast">
+                <span>Tomorrow</span>
+                <span class="icon">ICON</span>
+                <span>--°C</span>
+            </div>
+
+        </div>
+        <div class="subcards" id="current-conditions">
+            <h3>Current Conditions in </h3>
+            <p>Feels Like: --°C</p>
+            <p>Visibility: -- km</p>
+            <p>Humidity: -- %</p>
+            <p>Pressure: -- hPa</p>
+            <p>Sunrise: --(IST)</p>
+            <p>Sunset: --(IST)</p>
+        </div>
+        <div class="subcards" id="air-quality">
+            <h3>Air Quality</h3>
+            <h2 class="aqi" id="aqi"></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
