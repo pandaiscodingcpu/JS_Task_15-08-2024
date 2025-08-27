@@ -1,15 +1,12 @@
-# TASK 2  
+# Updated Dashboard   
 
-**1. Pomodoro Timer**  
-`index.html` : Main html file for the application  
-`style.css` : CSS file for styling  
-`script.js` : JS file for Event Listening, Timer etc.  
+**Created a Weather Dashboard using HTML,CSS and JS. Used Openweather API for fetching current weather,aqi of the city and five days forecast**  
 
-> NOTE: All the code references have been taken from [How To Create Pomodoro Timer App Using HTML CSS And JavaScript](https://www.youtube.com/watch?v=sVSAklXy1uE)
+**Frameworks and other tools**  
+`chart.js` : for plotting graphs of temperature, humidity and windspeed.  
+`OpenWeather API` : From this website, 3 APIs are fetched which are for Current Data, AQI and Weather Forecast.  
 
-**Admin Dashboard**  
-`index.html` : Main html file for the application  
-`style.css` : CSS file for styling  
-`script.js` : JS file for Event Listening, Charts using ApexChartsJS etc.  
-
-> NOTE: All the code references have been taken from [HTML CSS JavaScript Tutorial for Beginners | Build Admin Dashboard From Scratch](https://www.youtube.com/watch?v=ewN4_mcaI84)
+***WORKING***  
+The user will be asked to enter a city name on the top right corner of the page.  
+Then if the city name is not valid `data.cod != 200` then a warning will be raised about the valid city name.  
+Else, the required data are displayed on the page with two grpahs `Temperature throughout the day` and `Humidity and wind speed` using Chart.js.
