@@ -1,12 +1,18 @@
-# Updated Dashboard   
+# Mini Game: WordFall  
 
-**Created a Weather Dashboard using HTML,CSS and JS. Used Openweather API for fetching current weather,aqi of the city and five days forecast**  
+Created a basic game using HTML, CSS and JS in which random words falls from top and the user has to type those words. 
 
-**Frameworks and other tools**  
-`chart.js` : for plotting graphs of temperature, humidity and windspeed.  
-`OpenWeather API` : From this website, 3 APIs are fetched which are for Current Data, AQI and Weather Forecast.  
+---
 
-***WORKING***  
-The user will be asked to enter a city name on the top right corner of the page.  
-Then if the city name is not valid `data.cod != 200` then a warning will be raised about the valid city name.  
-Else, the required data are displayed on the page with two grpahs `Temperature throughout the day` and `Humidity and wind speed` using Chart.js.
+## Features  
+
+- **Multiple Difficulty Levels** → Easy, Medium, Hard.  
+- **Custom Time Settings** →30s, 1 min, 2 min
+- **Score & Accuracy Tracking** → Displays your total score and typing accuracy at the end.  
+- **Dynamic Falling Words** → Words appear randomly with different speeds based on difficulty.
+
+## Files  
+
+- `index.html` : Main html file for structure of the page.  
+- `style.css` : CSS file for styling  
+- `script.js` : JS file for game logic, responsiveness 
