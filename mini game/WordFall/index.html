@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Words Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="game-container" id="game-setup">
+        <h1>Falling Words</h1>
+        <div class="options-container">
+            <div class="options-group">
+                <h3>Select Time</h3>
+                <button class="btn time-btn" data-time="30">30s</button>
+                <button class="btn time-btn active" data-time="60">1 min</button>
+                <button class="btn time-btn" data-time="120">2 min</button>
+            </div>
+            <div class="options-group">
+                <h3>Select Difficulty</h3>
+                <button class="btn difficulty-btn active" id="easy">Easy</button>
+                <button class="btn difficulty-btn" id="medium">Medium</button>
+                <button class="btn difficulty-btn" id="hard">Hard</button>
+            </div>
+        </div>
+        <button id="start-btn" class="btn">Start Game</button>
+    </div>
+
+    <div class="game-container" id="game-play" style="display: none;">
+        <div class="score-board">
+            <div class="score-item">
+                <small>Score</small>
+                <span id="score">0</span>
+            </div>
+            <div class="score-item">
+                <small>Time</small>
+                <span id="time">60</span>
+            </div>
+        </div>
+        <div class="word-display" id="word-display"></div>
+        <input type="text" id="word-input" class="word-input" placeholder="Type the word here...">
+    </div>
+    
+    <div id="result-modal">
+        <div class="modal-content">
+            <h2>Game Over!</h2>
+            <p>Your Final Score:</p>
+            <span id="modal-score">0</span>
+            <p>Accuracy:</p>
+            <span id="modal-accuracy">100%</span>
+            <button id="play-again-btn" class="btn">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
